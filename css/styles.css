@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+} 
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    text-align: center;
+    color: white;
+    background-image: url("../assets/img/hero-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imagen horizontal en pantallas grandes */
+@media (min-width: 768px) {
+    .hero {
+        background-image: url("../assets/img/hero-desktop.jpg");
+    }
+}
+
+.btn-hero{
+    padding: 12px 28px;
+    background: #f2b134;
+    color: #14202c;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.game-card {
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: white;
+    font-family: sans-serif;   
+    margin: 8px
+}
+
+.game-card img {
+    width: 100%;
+    display: block;
+    background-color: red;
+    height: auto;
+}
+
+.game-card div, h3 {
+    padding: 12px;
+}
+
+.game-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
