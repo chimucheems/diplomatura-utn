@@ -3,6 +3,8 @@
     margin: 0px;
     scroll-behavior: smooth;
 } 
+
+
 .hero {
     min-height: 90vh;
     display: flex;
@@ -46,12 +48,23 @@
 .game-card img {
     width: 100%;
     display: block;
-    background-color: red;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
 }
 
 .game-card div, h3 {
     padding: 12px;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: #f2b134;
+    color: #14202c;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .game-card-container {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,15 @@
 <body>
     <header>
         <nav>
-            <a href="">Nav de prueba</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Juegos</a>
+            <a href="#galeria">Galería</a>
+            <a href="#formulario">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <h1>Biblioteca de juegos de mesa</h1>
             <p>Encontra tu proximo juego de mesa favorito.</p>
             <a href="#juegos" class="btn-hero">Ver juegos</a>
@@ -25,23 +28,37 @@
             <div class="game-card-container">
                 <article class="game-card">
                     <h3>Catán</h3>
-                    <img src="" alt="portada del catan">
+                    <img src="assets/img/catan.jpg" alt="Partida de Catán con el tablero de hexágonos y fichas de colores">
                     <div>
-                        <p>Descripcion del juego</p>
-                        <button>
-                            <a href="">ver juego</a>
-                        </button>
+                        <p>Colonizá una isla construyendo pueblos, ciudades y caminos. Comerciá recursos con los demás jugadores para llegar primero a 10 puntos.</p>
+                        <a href="https://es.wikipedia.org/wiki/Los_colonos_de_Cat%C3%A1n" class="btn-card" target="_blank">Ver juego</a>
                     </div>
                 </article>
 
                 <article class="game-card">
-                    <h3>Catán</h3>
-                    <img src="" alt="portada del catan">
+                    <h3>Splendor</h3>
+                    <img src="assets/img/splendor.jpg" alt="Cartas y fichas de gemas de una partida de Splendor">
                     <div>
-                        <p>Descripcion del juego</p>
-                        <button>
-                            <a href="">ver juego</a>
-                        </button>
+                        <p>Sos un comerciante de piedras preciosas: juntá gemas, comprá minas y atraé a los nobles más influyentes.</p>
+                        <a href="https://es.wikipedia.org/wiki/Splendor_(juego)" class="btn-card" target="_blank">Ver juego</a>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <h3>Azul</h3>
+                    <img src="assets/img/azul.jpg" alt="Tablero de Azul con azulejos de colores formando un mosaico">
+                    <div>
+                        <p>Elegí azulejos de colores y armá el mosaico más lindo del palacio real. Fácil de aprender y difícil de dominar.</p>
+                        <a href="https://es.wikipedia.org/wiki/Azul_(juego_de_mesa)" class="btn-card" target="_blank">Ver juego</a>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <h3>7 Wonders Duel</h3>
+                    <img src="assets/img/7-wonders-duel.jpg" alt="Partida de 7 Wonders Duel con cartas de civilizaciones sobre la mesa">
+                    <div>
+                        <p>Dos civilizaciones frente a frente. Construí maravillas y ganá por ciencia, por poder militar o por puntos.</p>
+                        <a href="https://es.wikipedia.org/wiki/7_Wonders_Duel" class="btn-card" target="_blank">Ver juego</a>
                     </div>
                 </article>
             </div>
@@ -99,6 +116,7 @@
 
     <footer>
         <p>Biblioteca de juegos de mesa</p>
+        <p>Fotos de Catán y Splendor: Yonghokim y JIP, Wikimedia Commons (CC BY-SA 4.0).</p>
     </footer>
 </body>
 </html>
