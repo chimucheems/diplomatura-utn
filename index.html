@@ -7,58 +7,98 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <a href="">Nav de prueba</a>
-    </nav>
+    <header>
+        <nav>
+            <a href="">Nav de prueba</a>
+        </nav>
+    </header>
+
     <main>
         <section class="hero">
-           
-        <h1>Biblioteca de juegos de mesa</h1>
-           
-        <p>Encontra tu proximo juego de mesa favorito.</p>
+            <h1>Biblioteca de juegos de mesa</h1>
+            <p>Encontra tu proximo juego de mesa favorito.</p>
+            <a href="#juegos" class="btn-hero">Ver juegos</a>
+        </section>
 
-        <a href="#juegos" class="btn-hero">Ver juegos</a>
+        <section id="juegos">
+            <h2>Lista de juegos disponibles</h2>
+            <div class="game-card-container">
+                <article class="game-card">
+                    <h3>Catán</h3>
+                    <img src="" alt="portada del catan">
+                    <div>
+                        <p>Descripcion del juego</p>
+                        <button>
+                            <a href="">ver juego</a>
+                        </button>
+                    </div>
+                </article>
 
+                <article class="game-card">
+                    <h3>Catán</h3>
+                    <img src="" alt="portada del catan">
+                    <div>
+                        <p>Descripcion del juego</p>
+                        <button>
+                            <a href="">ver juego</a>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Fotos del ultimo encuentro presencial</h2>
+            <div class="galeria">
+                <img src="assets/img/galeria-1.jpg" alt="Mano moviendo fichas de colores sobre un tablero con mapa">
+                <img src="assets/img/galeria-2.jpg" alt="Jugadores alrededor de una mesa con cartas y fichas de un juego de mesa">
+                <img src="assets/img/galeria-3.jpg" alt="Amigos jugando a las cartas en una mesa redonda con snacks">
+                <img src="assets/img/galeria-4.jpg" alt="Jugadores colocando fichas y monedas sobre un tablero en una mesa de madera">
+                <img src="assets/img/galeria-5.jpg" alt="Dos amigos riendo mientras juegan un juego de tablero">
+                <img src="assets/img/galeria-6.jpg" alt="Persona contando billetes de juego junto a un tablero">
+                <img src="assets/img/galeria-7.jpg" alt="Primer plano de un tablero con fichas y cartas de colores">
+                <img src="assets/img/galeria-8.jpg" alt="Manos sosteniendo cartas de juego sobre una alfombra a rayas">
+            </div>
+        </section>
+
+        <section id="formulario">
+            <h2>Contactate con nosotros</h2>
+            <form class="formulario">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre" id="Nombre"/>
+
+                <label for="Correo">Correo</label>
+                <input type="email" name="correo" id="Correo"/>
+
+                <label for="Telefono">Telefono</label>
+                <input type="number" name="telefono" id="Telefono"/>
+
+                <label for="motivo">Motivo de contacto</label>
+                <select name="Motivo" id="motivo">
+                    <option value="alquilar-un-juego">Alquilar un juego</option>
+                    <option value="organizar-un-evento">Organizar un evento</option>
+                    <option value="solicitar-mas-informacion">Solicitar mas informacion</option>
+                </select>
+
+                <label for="Comentarios">Comentarios</label>
+                <textarea name="Comentarios" id="Comentarios" rows="5" placeholder="Dejanos tus comentarios"></textarea>
+
+                <fieldset>
+                    <legend>Metodo de contacto</legend>
+                    <label for="contacto-via-email"><input type="checkbox" name="contacto-via-email" id="contacto-via-email"/>Email</label>
+                    <label for="contacto-via-whatsapp"><input type="checkbox" name="contacto-via-whatsapp" id="contacto-via-whatsapp"/>Whatsapp</label>
+                </fieldset>
+
+                <div class="form-botones">
+                    <button type="reset">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
     </main>
-    <section id="juegos">
-        <h2>Lista de juegos disponibles</h2>
-        <div class="game-card-container">
-            <article class="game-card">
-                <h3>Catán</h3>
-                <img src="" alt="portada del catan">
-               <div>
-                <p>Descripcion del juego</p>
-                <button>
-                    <a href="">ver juego</a>
-                </button>
-            </div> 
-            </article>
 
-            <article class="game-card">
-                <h3>Catán</h3>
-                <img src="" alt="portada del catan">
-               <div>
-                <p>Descripcion del juego</p>
-                <button>
-                    <a href="">ver juego</a>
-                </button>
-            </div> 
-            </article>
-            </div>
-    </section>
-    <section id="galeria">
-        <h2>Fotos del ultimo encuentro presencial</h2>
-        <div class="galeria">
-        <img src="assets/img/galeria-1.jpg" alt="Mano moviendo fichas de colores sobre un tablero con mapa">
-<img src="assets/img/galeria-2.jpg" alt="Jugadores alrededor de una mesa con cartas y fichas de un juego de mesa">
-<img src="assets/img/galeria-3.jpg" alt="Amigos jugando a las cartas en una mesa redonda con snacks">
-<img src="assets/img/galeria-4.jpg" alt="Jugadores colocando fichas y monedas sobre un tablero en una mesa de madera">
-<img src="assets/img/galeria-5.jpg" alt="Dos amigos riendo mientras juegan un juego de tablero">
-<img src="assets/img/galeria-6.jpg" alt="Persona contando billetes de juego junto a un tablero">
-<img src="assets/img/galeria-7.jpg" alt="Primer plano de un tablero con fichas y cartas de colores">
-<img src="assets/img/galeria-8.jpg" alt="Manos sosteniendo cartas de juego sobre una alfombra a rayas">
-</div>    
-</section>
+    <footer>
+        <p>Biblioteca de juegos de mesa</p>
+    </footer>
 </body>
 </html>
