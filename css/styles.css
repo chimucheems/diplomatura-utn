@@ -1,3 +1,4 @@
+/* ===== RESET GENERAL ===== */
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -18,6 +19,7 @@ button {
     font-family: inherit;
 }
 
+/* ===== TÍTULOS DE SECCIÓN (mobile first) ===== */
 h2 {
     text-align: center;
 }
@@ -33,6 +35,7 @@ section {
 
 }
 
+/* ===== HERO: imagen de fondo con texto centrado ===== */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -63,6 +66,7 @@ section {
     font-weight: bold;
 }
 
+/* ===== CARDS DE JUEGOS ===== */
 .game-card {
     width: 250px;
     border-radius: 12px;
@@ -101,6 +105,7 @@ section {
     margin-top: 24px;
 }
 
+/* ===== GALERÍA: mosaico con flex-wrap ===== */
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +127,7 @@ section {
     }
 }
 
+/* ===== FORMULARIO DE CONTACTO ===== */
 .formulario {
     display: flex;
     flex-direction: column;    
@@ -157,11 +163,34 @@ section {
 }
 
 
-.formulario input[type="checkbox"] {
-    width: auto;
-    margin-right: 12px;
+/* Grupo "Metodo de contacto": mismo borde y radio que los campos */
+.formulario fieldset {
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    padding: 10px 12px 12px;
+    border: 1px solid #c9ced6;
+    border-radius: 8px;
 }
 
+.formulario legend {
+    font-weight: bold;
+    padding: 0 4px;
+}
+
+.formulario fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.formulario input[type="checkbox"] {
+    width: auto;
+}
+
+/* ===== BOTONES DEL FORMULARIO ===== */
 .form-botones {
     display: flex;
     gap: 12px;

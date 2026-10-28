@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome: íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -24,7 +26,7 @@
         <section class="hero" id="inicio">
             <h1>Biblioteca de juegos de mesa</h1>
             <p>Encontra tu proximo juego de mesa favorito.</p>
-            <a href="#juegos" class="btn-hero">Ver juegos</a>
+            <a href="#juegos" class="btn-hero"><i class="fa-solid fa-dice" aria-hidden="true"></i> Ver juegos</a>
         </section>
 
         <section id="juegos">
@@ -104,13 +106,15 @@
                 <label for="Comentarios">Comentarios</label>
                 <textarea name="Comentarios" id="Comentarios" rows="5" placeholder="Dejanos tus comentarios"></textarea>
 
-                    <label>Metodo de contacto</label>
-                    <label for="contacto-via-email"><input type="checkbox" name="contacto-via-email" id="contacto-via-email"/>Email</label>
-                    <label for="contacto-via-whatsapp"><input type="checkbox" name="contacto-via-whatsapp" id="contacto-via-whatsapp"/>Whatsapp</label>
+                <fieldset>
+                    <legend>Metodo de contacto</legend>
+                    <label for="contacto-via-email"><input type="checkbox" name="contacto-via-email" id="contacto-via-email"/><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</label>
+                    <label for="contacto-via-whatsapp"><input type="checkbox" name="contacto-via-whatsapp" id="contacto-via-whatsapp"/><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Whatsapp</label>
+                </fieldset>
 
                 <div class="form-botones">
-                    <button type="reset">Limpiar</button>
-                    <button type="submit">Enviar</button>
+                    <button type="reset"><i class="fa-solid fa-eraser" aria-hidden="true"></i> Limpiar</button>
+                    <button type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar</button>
                 </div>
             </form>
         </section>
