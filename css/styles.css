@@ -7,13 +7,13 @@
 
 /* ===== TIPOGRAFÍA Y FONDO GENERAL ===== */
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Outfit", sans-serif;
     background: #f6f1e7;        /* crema suave para toda la página */
     color: #14202c;
 }
 
 h1, h2, h3 {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 /* Los botones no heredan la fuente solos */
@@ -35,7 +35,7 @@ button {
 }
 
 .logo {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     color: #f2b134;
@@ -90,7 +90,7 @@ section {
 }
 
 .footer-marca {
-    font-family: "Fredoka", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     color: #f2b134;
