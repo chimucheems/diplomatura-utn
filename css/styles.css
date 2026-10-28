@@ -5,9 +5,11 @@
     scroll-behavior: smooth;
 } 
 
-/* ===== TIPOGRAFÍA (Google Fonts) ===== */
+/* ===== TIPOGRAFÍA Y FONDO GENERAL ===== */
 body {
     font-family: "Nunito", sans-serif;
+    background: #f6f1e7;        /* crema suave para toda la página */
+    color: #14202c;
 }
 
 h1, h2, h3 {
@@ -17,6 +19,102 @@ h1, h2, h3 {
 /* Los botones no heredan la fuente solos */
 button {
     font-family: inherit;
+}
+
+/* ===== HEADER Y NAV (mobile first: logo arriba, links abajo) ===== */
+.header {
+    position: sticky;           /* queda fijo arriba al hacer scroll */
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #14202c;
+}
+
+.logo {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f2b134;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: #f2b134;
+}
+
+/* Que el header fijo no tape el título al saltar a una sección */
+section {
+    scroll-margin-top: 90px;
+}
+
+/* En PC: logo a la izquierda, links a la derecha */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 32px;
+    }
+
+    .nav {
+        gap: 28px;
+    }
+}
+
+/* ===== FOOTER: mismo estilo que el header ===== */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 16px;
+    background: #14202c;
+    color: #c9ced6;
+    text-align: center;
+}
+
+.footer-marca {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f2b134;
+}
+
+.footer-info {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-info strong {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 32px;
+    }
+
+    .footer-info {
+        text-align: right;
+    }
 }
 
 /* ===== TÍTULOS DE SECCIÓN (mobile first) ===== */
@@ -31,7 +129,7 @@ h2 {
 }
 
 section {
-    margin-bottom: 64px;
+    padding: 48px 0;
 
 }
 
@@ -73,7 +171,19 @@ section {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     background: white;
-    margin: 8px
+    margin: 8px;
+    display: flex;              /* columna: título, foto y contenido */
+    flex-direction: column;
+}
+
+/* El contenido ocupa el espacio que sobra y empuja el botón abajo,
+   así todos los botones quedan a la misma altura */
+.game-card div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .game-card img {
@@ -89,7 +199,7 @@ section {
 
 .btn-card {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: auto;           /* empuja el botón al fondo de la card */
     padding: 8px 20px;
     background: #f2b134;
     color: #14202c;
@@ -106,6 +216,10 @@ section {
 }
 
 /* ===== GALERÍA: mosaico con flex-wrap ===== */
+#galeria {
+    background: #ffffff;        /* franja blanca para separar secciones */
+}
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +242,10 @@ section {
 }
 
 /* ===== FORMULARIO DE CONTACTO ===== */
+#formulario {
+    padding: 48px 16px;         /* margen lateral en celular */
+}
+
 .formulario {
     display: flex;
     flex-direction: column;    
