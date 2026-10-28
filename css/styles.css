@@ -4,6 +4,34 @@
     scroll-behavior: smooth;
 } 
 
+/* ===== TIPOGRAFÍA (Google Fonts) ===== */
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Fredoka", sans-serif;
+}
+
+/* Los botones no heredan la fuente solos */
+button {
+    font-family: inherit;
+}
+
+h2 {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    h2 {
+        text-align: left;
+        margin-left: 16px;
+    }
+}
+
+section {
+    margin-bottom: 64px;
+
+}
 
 .hero {
     min-height: 90vh;
@@ -41,7 +69,6 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     background: white;
-    font-family: sans-serif;   
     margin: 8px
 }
 
@@ -71,6 +98,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 24px;
 }
 
 .galeria {
@@ -104,7 +132,6 @@
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
     color: #14202c;
 }
 
